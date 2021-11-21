@@ -1,0 +1,48 @@
+Struktur Dasar Program C
+Setiap kita ingin membuat program C, kita harus menuliskan struktur seperti berikut ini:
+
+#include <stdio.h>
+
+int main(){
+    // kode atau logika program kita di sini
+    return 0;
+}
+Ini adalah struktur dasar yang wajib dipahami.
+
+Kalau kita perhatikan, struktur program tersebut dibagi menjadi dua bagian utama:
+
+Bagian Include;
+Blok Fungsi Main.
+Struktur Program C
+Mari kita bahas lebih detail…
+
+Apa itu #include?
+Pada program C, #include berfungsi untuk mengimpor fungsi-fungsi yang sudah didefinisikan pada header file.
+
+Header file adalah file yang berisi definisi fungsi yang sudah dibuat. Tujuannya agar bisa digunakan pada program C yang lainnya. File ini berekstensi .h, contoh: stdio.h.
+
+Pada contoh di atas, kita mengimpor file stdio.h. File ini berisi deklarasi fungsi-fungsi dasar yang kita butuhkan untuk membuat program C, seperti printf().
+
+File stdio.h sudah ada di dalam komputer kita saat menginstal gcc.
+
+Apa itu Fungsi main()?
+Fungis main() adalah fungsi utama dalam program. Fungsi ini akan dieksekusi pertamakali saat program dijalankan.
+
+Karena itu, kita harus menuliskan logika program di dalam fungsi ini.
+
+Pada contoh di atas kita membut fungsi main dengan deklarasi seperti ini:
+
+int main(){
+    //...
+    return 0
+}
+Maksud dari int di depan main adalah tipe data yang akan dikembalikan. Maka di dalam fungsi main(), wajib kita sertakan return 0. Artinya, fungsi main akan mengembalikan nilai 0 setelah selesai dieksekusi.
+
+Cara lain kita bisa menggunakan void.
+
+Contoh:
+
+void main(){
+    //...
+}
+void artinya tidak ada (kosong). Jika kita menggunakan void, maka kita tidak perlu menuliskan kata kunci return di akhir fungsi. Karena fungsi void tidak akan mengembalikan nilai apapun.

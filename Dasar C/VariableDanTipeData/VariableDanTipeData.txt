@@ -1,0 +1,128 @@
+A. Contoh Program dengan Variabel
+Baiklah, mari kita coba menggunakan variabel dalam program…
+
+Buka Codeblocks!
+
+Kemudian buat program baru bernama contoh_variabel.c, kemudian isi dengan kode berikut.
+
+#include <stdio.h>
+
+int main(){
+    // membuat variabel dengan tipe data integer
+    int berat;
+    // membuat variabel dan langsung mengisinya
+    int tinggi = 178;
+
+    // mengisi nilai ke variabel
+    berat = 54;
+
+    // mencetak isi variabel ke layar
+    printf("Berat badan saya adalah %ikg dan tinggi %icm", berat, tinggi);ode
+
+    return 0;
+}
+Setelah itu coba jalankan programnya…
+
+
+
+Membuat Variabel pada bahasa pemrograman C
+Jadi kita cukup menuliskan nama variabel pada fungsi printf() untuk menampilkan isinya.
+
+Apa yang akan terjadi jika kita lupa mengisi nilai variabel.
+
+Misalnya di bagian pengisian nilai untuk variabel berat kita hapus seperti ini.
+
+Variabel pada bahasa pemrograman C
+Maka hasil outputnya:
+
+Berat badan saya adalah 0kg dan tinggi 178cm
+Isi dari variabel berat akan sama dengan nol 0, karena kita tidak mengisinya.
+
+Ini adalah nilai default yang diberikan.
+
+Saran saya:
+
+Selalu isi variabel yang kamu buat, agar tidak sia-sia.
+
+Percuma ‘kan sudah dibuat, tapi tidak dipakai.
+
+Tipe Data pada Bahasa C
+Tipe data adalah jenis data…
+
+Menurut Wikipedia:
+
+“Tipe data atau kadang disingkat dengan ‘tipe’ saja adalah sebuah pengelompokan data untuk memberitahu compiler atau interpreter bagaimana programmer ingin mengolah data tersebut” 1
+
+Ada delapan jenis tipe data pada C:
+
+1. Char
+2. Integer
+3. Float
+4. Array
+5. Structure
+6. Pointer
+7. Enum
+8. Void
+
+B. Tipe Data Dasar pada C
+Sesuai namanya, tipe data dasar adalah tipe data yang paling dasar dalam bahasa pemrograman C.
+
+Tipe data dasar terdiri dari…
+
+Tipe data dasar pada pemrograman c
+1. Char: adalah tipe data yang berisi 1 huruf atau 1 karakter;
+2. Integer: adalah tipe data yang berupa angka;
+3. Float: adalah tipe data yang berupa bilangan pecahan
+4. Double: adalah tipe data sama seperti float, namun double memiliki ukuran penyimpanan yang lebih besar dibandingkan float.
+
+Setiap tipe data memiliki panjang dan ukuran, perhatikan tabel berikut.
+
+Tipe Data	Ukuran	Panjang				Contoh
+char	1 byte	-128 — 127 atau 0 — 255		'A', 'a', '3'
+int	2 byte	-32,768 — 32,767 atau -2,147,483,  	32, 1, 4
+float	4 byte	1.2E-38 — 3.4E+38	4.3, 2.2, 6.0  	4.3, 2.2, 6.0
+double	8 byte	2.3E-308 — 1.7E+308	4.2, 4.22, 3.2	4.2, 4.22, 3.2
+
+Format penulisan koma untuk tipe data float dan double menggunakan tanda titik, mengikuti format internasional.
+
+Jika kamu menulis seperti ini 2,5 maka akan salah. Penulisan yang benar adalah 2.5.
+
+Lalu untuk penulisan tipe data char harus diapit dengan tanda petik.
+
+Mengapa?
+
+Karena kalau misalnya karakter itu adalah spasi— tanpa tanda petik—kita tidak akan bisa mengisinya dengan karakter spasi.
+
+Contoh Program:
+
+Buatlah program baru dengan nama contoh_tipedata.c, kemudian isi dengan kode berikut.
+
+#include <stdio.h>
+
+int main(){
+    int usia = 19;
+    float berat = 65.3;
+    double tinggi = 178.43;
+    char jenis_kelamin = 'L';
+
+    printf("Usia: %i tahun\n", usia);
+    printf("Tinggi: %.2f cm\n", tinggi);
+    printf("Berat: %.2f Kg\n", berat);
+    printf("Jenis kelamin: %c\n", jenis_kelamin);
+
+    return 0;
+}
+
+Output program dengan tipe data
+Mungkin kamu akan bertanya:
+
+Mengapa kita menggunakan %.2f pada saat mencetak tipe data float dan double?
+
+Kita bisa saja mencetakanya dengan format %f saja, akan tetapi akan dicetak dengan angka yang panjang.
+
+Tinggi: 178.430000 cm
+Berat: 65.300003 Kg
+Kita menggunakan %.2f untuk menentukan batas jumlah angka setelah koma. Angka 2 sebelum f artinya dua angka di belakang koma.
+
+Tinggi: 178.43 cm
+Berat: 65.30 Kg

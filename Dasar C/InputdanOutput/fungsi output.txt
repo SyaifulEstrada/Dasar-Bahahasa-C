@@ -1,0 +1,149 @@
+1. Fungsi printf()
+Fungsi printf() merupakan fungsi untuk menampilkan output ke layar komputer. Fungsi ini terdapat pada library stdio.h.
+
+Oleh sebab itu, ketika kita diharuskan untuk menuliskan #include <stdio.h> di bagian atas program agar bisa menggunakan fungsi ini.
+
+Berikut ini struktur dasar fungsi printf():
+
+Fungsi printf di c
+Perhatikan:
+
+"format" adalah sebuah teks (string) untuk ditampilkan. Lalu tanda ... akan berisi sebuah variabel atau nilai untuk ditampilkan berdasarkan format yang diberikan pada teks "format".
+
+Mari kita lihat contohnya:
+
+Buatlah sebuah program C bernama output.c, lalu isi dengan kode berikut.
+
+#include <stdio.h>
+
+int main(){
+    printf("Hello, ini adalah teks output\n");
+    printf("Nama saya %s\n", "Dian");
+    printf("Usia saya %d\n", 20);
+    return 0;
+}
+Hasilnya:
+
+Output program C
+Ada beberapa hal yang perlu di perhatikan…
+
+Pada fungsi printf() kita menggunakan simbol %s, %d, dan \n untuk format teks. Simbol-simbol ini disebut format specifier.
+
+Mari kita bahas arti dari simbol tersebut:
+
+%s adalah simbol untuk menampilkan nilai string;
+%d adalah simbol untuk menampilkan nilai angka atau bilangan desimal;
+\n adalah simbol untuk membuat baris baru.
+Selain tiga simbol tersebut, masih banyak lagi simbol yang lain.
+
+Simbol	Arti atau Fungsi
+%c	untuk menampilkan karakter
+%s	untuk menampilkan teks (string)
+%d, %i	untuk menampilkan bilangan desimal
+%f	untuk menampilkan bilangan pecahan
+%o	untuk menampilkan bilangan oktal
+%x	untuk menampilkan bilangan heksadesimal
+\t	untuk membuat tabs
+
+2. Fungsi puts()
+Fungsi puts() adalah fungsi untuk menampilkan output. Fungsi ini juga terdapat pada library stdio.h.
+
+Perbedaanya dengan printf(), fungsi puts() tidak memerlukan format.
+
+Fungsi puts() akan selalu membuat baris baru. Jadi tidak perlu menggunakan simbol \n seperti pada printf().
+
+ontoh program: fungsi_puts.c
+
+#include <stdio.h>
+
+int main(){
+    puts("Hello World");
+    puts("Nama Saya Dian");
+    
+    return 0;
+}
+Hasilnya:
+
+Program C dengan fungsi puts
+Selain fungsi puts(), terdapat juga fungsi putchar() yang khusus untuk menampilkan satu karakter saja.
+
+Contoh:
+
+#include <stdio.h>
+
+int main(){
+    putchar('A');
+
+    return 0;
+}
+Maka akan menghasilkan output:
+
+A
+Lalu pertanyaannya:
+
+Fungsi manakah yang harus saya pakai?
+
+Jawabannya, tergantung…
+
+Tergantung dari teks apa yang akan ditampilkan.
+
+Apabila di sana kita akan menampilkan teks dan nilai atau variabel, sebaiknya menggunakan printf() karena bisa membuat format.
+
+Tapi kalau teks yang biasa saja, bisa pakai puts().
+
+
+
+Hasilnya:
+
+Program C dengan fungsi puts
+Selain fungsi puts(), terdapat juga fungsi putchar() yang khusus untuk menampilkan satu karakter saja.
+
+Contoh:
+
+#include <stdio.h>
+
+int main(){
+    putchar('A');
+
+    return 0;
+}
+Maka akan menghasilkan output:
+
+A
+Lalu pertanyaannya:
+
+Fungsi manakah yang harus saya pakai?
+
+Jawabannya, tergantung…
+
+Tergantung dari teks apa yang akan ditampilkan.
+
+Apabila di sana kita akan menampilkan teks dan nilai atau variabel, sebaiknya menggunakan printf() karena bisa membuat format.
+
+Tapi kalau teks yang biasa saja, bisa pakai puts().
+
+Fungsi Input pada C
+
+1. Fungsi scanf()
+Fungsi scanf() adalah fungsi untuk mengambil input dari keyboard. Fungsi ini memiliki format seperti fungsi printf().
+
+#include <stdio.h>
+
+int main () {
+    // membuat variabel
+    char name[20], web_address[30];
+
+    printf("Nama: ");
+    scanf("%s", &name);
+
+    printf("Alamat web: ");
+    scanf("%s", &web_address);
+
+    printf("\n------------------------------\n");
+    printf("Nama yang diinputkan: %s\n", name);
+    printf("Alamat Web yang diinputkan: %s\n", web_address);
+   
+    return 0;
+}
+
+
