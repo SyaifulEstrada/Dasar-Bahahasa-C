@@ -16,7 +16,6 @@ void main() {
 
 
 
-/*
 int usia = 16;
 float berat = 45.33;
 double tinggi = 163.76;
@@ -26,7 +25,7 @@ printf("Usia: %i tahun\n", usia);
 printf("Berat: %.2f kg\n", berat);
 printf("Tinggi: %.2f cm\n", tinggi);
 printf("Jenis Kelamin : %c\n", jenis_kelamin);
-*/
+
 
 
 
